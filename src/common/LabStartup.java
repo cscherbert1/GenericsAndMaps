@@ -14,14 +14,16 @@ public class LabStartup {
         Movie m2 = new Movie("Pirates of the Caribbean", "Gore Verbinski", "600");
         Movie m3 = new Movie("The Lord of the Rings", "Peter Jackson", "400");
         Movie m4 = new Movie("Pirates of the Caribbean", "Gore Verbinski", "100");
+        Movie m5 = new Movie("Pirates of the Caribbean", "Gore Verbinski", "100");
         
         Map<String, Movie> map = new HashMap<String, Movie>();
-        map.put("300", m1);
-        map.put("600", m2);
-        map.put("400", m3);
-        map.put("100", m4);
+        map.put("1", m1);
+        map.put("2", m2);
+        map.put("3", m3);
+        map.put("4", m4);
+        map.put("5", m5);
         
-        Movie m = map.get("100");
+        Movie m = map.get("300");
         System.out.println("Individual Movie w/ Key of 100 found: " + m);
         
         System.out.println("");
